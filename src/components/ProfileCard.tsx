@@ -1,4 +1,4 @@
-import React from "react";
+import { type FC } from "react";
 import type { Profile } from "../types/profile";
 import { Mail, MapPin, Phone, Calendar, RefreshCw } from "lucide-react";
 
@@ -8,7 +8,7 @@ interface ProfileCardProps {
   isLoading: boolean;
 }
 
-export const ProfileCard: React.FC<ProfileCardProps> = ({
+export const ProfileCard: FC<ProfileCardProps> = ({
   profile,
   onRefresh,
   isLoading,
